@@ -3,13 +3,14 @@ package com.parfait.study.simpleevent;
 import com.parfait.study.simpleevent.model.SendableParameter;
 import com.parfait.study.simpleevent.model.member.Member;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertThat;
+
 
 @Slf4j
 public class TestSpelParser {
